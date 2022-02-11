@@ -27,6 +27,10 @@ if(process.env.NODE_ENV === 'Production'){
     })
 }
 
+app.get('/', (req, res) => {
+    res.send('api is running....')
+})
+
 
 const port = process.env.PORT || 5000
 app.listen(port, () => {
